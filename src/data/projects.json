@@ -1,26 +1,34 @@
 [
   {
+    "title": "PDFQuery AI",
+    "description": "Developed a full-stack AI-powered application that allows users to upload PDFs and interact with their content through natural language queries. Leveraging Large Language Models (LLMs) and Weaviate vector database, the system performs semantic search and context-based question answering over PDF documents. The key technologies used are MERN Stack (MongoDB, Express, React, Node.js) for the web interface and backend, Weaviate for vectorized document storage and semantic search, LangChain / OpenAI API (or relevant LLMs) for understanding and answering questions, PDF parsing and preprocessing for chunking and embedding generation. The Example use cases are Legal document Q&A, Research paper summarization, Internal knowledge base access. This project showcases my ability to integrate machine learning with scalable web technologies to build real-world AI solutions.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS1zjvdWgyWKNb3UObU6o5awocQhr6frdOJQ&s",
+    "github": "https://github.com/Muhammad-Ahtasham/PDF-CHATBOT.git",
+    "video": "https://youtu.be/XAsE6YTZHbU?si=PtumngkGGnuM7v8I"
+  },
+  {
     "title": "AI Image Generation",
     "description": "Using a pretrained model from hugging face, I trained it on my custom dataset (my own images). So the model used to take prompts and generate images based on the prompt",
-    "image": "/images/ai-generation.jpg",
+    "image": "https://media.licdn.com/dms/image/v2/D4D22AQHEgnOtXGpnqw/feedshare-shrink_800/feedshare-shrink_800/0/1690180464170?e=1755734400&v=beta&t=sd2zRk2QMXkGVcdXdBubF-9MpX4wdIBp_YmpeSDnjDo",
     "demo": "https://www.linkedin.com/posts/muhammadahtasham_artificialintelligence-lora-aienthusiast-activity-7089130698317438976-_EaG"
   },
   {
     "title": "Discord Chatbot Integration",
     "description": "Using OpenAI, I integrated a chatbot with discord.",
-    "image": "/images/discord-bot.jpg",
-    "demo": "https://www.linkedin.com/posts/muhammadahtasham_atiiigpt-openai-generativeai-activity-7103279000852004864-hf_C"
+    "image": "/images/discord-bot.png",
+    "demo": "https://www.linkedin.com/posts/muhammadahtasham_atiiigpt-openai-generativeai-activity-7103279000852004864-hf_C",
+    "video": "https://youtu.be/iumA8HIP2do?si=44GSg2dFESUtb2SP"
   },
   {
     "title": "University Chatbot",
     "description": "I made this project during my internship. All the internees were asked to make a chatbot for their own universities. So first of all, I scrapped data from giki website and then made chatbot using langchain",
     "github": "https://github.com/Muhammad-Ahtasham/GIKI-chatbot-BF.git",
-    "image": "/images/university-bot.jpg"
+    "image": "https://edscoop.com/wp-content/uploads/sites/4/2021/05/GettyImages-936401434-1.jpg"
   },
   {
     "title": "DrugRecommender",
     "description": "The model took the symptoms as input from user and predicts the disease, recommend medicine and diet.",
     "github": "https://github.com/Muhammad-Ahtasham/DrugRecommender.git",
-    "image": "/images/drug-recommender.jpg"
+    "image": "https://miro.medium.com/v2/resize:fit:1400/1*Y0r18RDjLiMRGbZ2AfFRDg.jpeg"
   }
 ]

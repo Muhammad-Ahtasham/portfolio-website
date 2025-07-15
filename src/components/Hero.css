@@ -79,6 +79,19 @@
   left: 0;
 }
 
+.dynamic-name {
+  color: #1e90ff;
+  font-weight: bold;
+  border-right: 2px solid #1e90ff;
+  padding-right: 2px;
+  animation: blink-cursor 0.8s steps(1) infinite;
+}
+
+@keyframes blink-cursor {
+  0%, 100% { border-color: #1e90ff; }
+  50% { border-color: transparent; }
+}
+
 @media (max-width: 968px) {
   .hero-content {
     flex-direction: column-reverse;

@@ -22,34 +22,60 @@
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  min-height: 400px;
+  max-height: 400px;
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
+.project-image-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  flex-shrink: 0;
 }
 
 .project-card img {
   width: 100%;
-  height: 200px;
+  height: 100%;
   object-fit: cover;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  min-height: 0;
 }
 
 .project-card h3 {
   color: #1e90ff;
-  padding: 1rem;
+  padding: 1rem 1rem 0.5rem 1rem;
   margin: 0;
+  min-height: 48px;
+  max-height: 48px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .project-card p {
   color: #fff;
-  padding: 0 1rem 1rem;
+  padding: 0 1rem 1rem 1rem;
   margin: 0;
+  min-height: 60px;
+  max-height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .project-links {
   padding: 1rem;
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .project-links a {
@@ -64,4 +90,274 @@
 .project-links a:hover {
   background-color: #1e90ff;
   color: #000;
+}
+
+.show-more-btn {
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 2rem auto 0 auto;
+  display: block;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.show-more-btn:hover {
+  background-color: #0d6efd;
+}
+
+.desc-ellipsis {
+  color: #1e90ff;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 2px;
+}
+
+.project-details-page {
+  background: #111;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.project-details-page-flex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #111;
+  min-height: 80vh;
+  gap: 3rem;
+  padding: 3rem 2rem;
+}
+
+.project-details-left {
+  flex: 1 1 350px;
+  max-width: 500px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.project-details-right {
+  flex: 1 1 350px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-details-right img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.project-nav-arrows {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.arrow {
+  font-size: 2rem;
+  color: #1e90ff;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.2s;
+}
+.arrow:hover {
+  color: #63b3ed;
+}
+
+.show-more-project-btn {
+  color: #1e90ff;
+  background: transparent;
+  border: 1px solid #1e90ff;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s;
+  margin-left: 0;
+}
+.show-more-project-btn:hover {
+  background-color: #1e90ff;
+  color: #000;
+}
+
+.project-details-page-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #111;
+  min-height: 80vh;
+  padding: 3rem 2rem;
+  gap: 2.5rem;
+}
+
+.project-details-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 700px;
+  background: none;
+}
+
+.project-details-title {
+  color: #1e90ff;
+  font-size: 2.2rem;
+  margin: 1.5rem 0 1rem 0;
+  text-align: center;
+  word-break: break-word;
+}
+
+.project-details-desc {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  word-break: break-word;
+}
+
+.project-details-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+}
+
+.project-details-video-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 2rem 0 0 0;
+}
+
+.project-details-video {
+  width: 100%;
+  max-width: 700px;
+  height: 400px;
+  border-radius: 8px;
+  background: #000;
+}
+
+.project-details-arrows {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-details-desc-img-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.5rem;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
+}
+
+.project-details-desc-left {
+  flex: 1 1 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: 220px;
+  height: 100%;
+  position: relative;
+}
+
+.project-details-links {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.project-details-desc-left .project-details-desc {
+  margin-bottom: 2rem;
+}
+
+.project-details-desc-right {
+  flex: 1 1 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 220px;
+}
+
+.project-details-desc-right .project-details-image {
+  max-width: 350px;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.project-details-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
+}
+
+.back-btn {
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 1.5rem;
+  transition: background 0.3s;
+}
+.back-btn:hover {
+  background-color: #0d6efd;
+}
+
+@media (max-width: 900px) {
+  .project-details-page-flex {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2rem;
+  }
+  .project-details-right, .project-details-left {
+    max-width: 100%;
+  }
+  .project-details-main, .project-details-video {
+    max-width: 100%;
+  }
+  .project-details-video {
+    height: 220px;
+  }
+  .project-details-desc-img-flex {
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 100%;
+  }
+  .project-details-desc-left, .project-details-desc-right {
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  .project-details-desc-right .project-details-image {
+    max-width: 100%;
+    height: auto;
+  }
 }
