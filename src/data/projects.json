@@ -36,5 +36,11 @@
     "description": "The model took the symptoms as input from user and predicts the disease, recommend medicine and diet.",
     "github": "https://github.com/Muhammad-Ahtasham/DrugRecommender.git",
     "image": "https://miro.medium.com/v2/resize:fit:1400/1*Y0r18RDjLiMRGbZ2AfFRDg.jpeg"
+  },
+  {
+    "title": "NeuroDev",
+    "description": "I built the NeuroDev website using React.js, Next.js, and Tailwind CSS to create a fast, responsive, and modern web experience. The site was developed with a component-based architecture for reusability and scalability, while Next.js enabled server-side rendering and static generation for improved performance and SEO. Tailwind CSS allowed for rapid styling and consistent design across all screen sizes, and the site was deployed using Netlify, which handles continuous deployment and global CDN distribution. NeuroDev is a software services company that provides end-to-end digital solutions, including web development, UI/UX design, backend integration, and software consulting. The company focuses on helping startups and businesses bring their ideas to life through clean code, scalable architecture, and user-focused design, acting as a strategic technology partner in their digital transformation journey.",
+    "demo": "https://neuro-dev.netlify.app/",
+    "image": "/images/NeuroDev.png"
   }
 ]
