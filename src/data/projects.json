@@ -1,0 +1,26 @@
+[
+  {
+    "title": "AI Image Generation",
+    "description": "Using a pretrained model from hugging face, I trained it on my custom dataset (my own images). So the model used to take prompts and generate images based on the prompt",
+    "image": "/images/ai-generation.jpg",
+    "demo": "https://www.linkedin.com/posts/muhammadahtasham_artificialintelligence-lora-aienthusiast-activity-7089130698317438976-_EaG"
+  },
+  {
+    "title": "Discord Chatbot Integration",
+    "description": "Using OpenAI, I integrated a chatbot with discord.",
+    "image": "/images/discord-bot.jpg",
+    "demo": "https://www.linkedin.com/posts/muhammadahtasham_atiiigpt-openai-generativeai-activity-7103279000852004864-hf_C"
+  },
+  {
+    "title": "University Chatbot",
+    "description": "I made this project during my internship. All the internees were asked to make a chatbot for their own universities. So first of all, I scrapped data from giki website and then made chatbot using langchain",
+    "github": "https://github.com/Muhammad-Ahtasham/GIKI-chatbot-BF.git",
+    "image": "/images/university-bot.jpg"
+  },
+  {
+    "title": "DrugRecommender",
+    "description": "The model took the symptoms as input from user and predicts the disease, recommend medicine and diet.",
+    "github": "https://github.com/Muhammad-Ahtasham/DrugRecommender.git",
+    "image": "/images/drug-recommender.jpg"
+  }
+]
