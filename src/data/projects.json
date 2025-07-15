@@ -20,6 +20,12 @@
     "video": "https://youtu.be/iumA8HIP2do?si=44GSg2dFESUtb2SP"
   },
   {
+    "title": "AI Based Alzheimer's Detection And Classification",
+    "description": "Developed an innovative AI-powered system for early detection and classification of Alzheimer's disease. Leveraged machine learning algorithms and advanced neural networks to analyze brain imaging data, identifying subtle patterns indicative of the disease's onset. This project aimed to provide a non-invasive and efficient method for early diagnosis, potentially leading to better patient outcomes and enhanced treatment strategies. Collaborated with medical professionals to ensure clinical relevance and accuracy.",
+    "image": "https://media.licdn.com/dms/image/v2/D4D22AQHD0zJFgLnESw/feedshare-shrink_1280/feedshare-shrink_1280/0/1715541193239?e=1755734400&v=beta&t=rszBH-cimg2XMEHv7xlbbabZ1q6WJVX2--5SK12OicA",
+    "demo": "https://www.linkedin.com/posts/muhammadahtasham_fyp-alzheimersdetection-teamwork-activity-7195501294457962496-Wwc6?utm_source=share&utm_medium=member_desktop&rcm=ACoAADbgXp4BG7KxPlptFGtM1RcbIFvbevtkFK4"
+  },
+  {
     "title": "University Chatbot",
     "description": "I made this project during my internship. All the internees were asked to make a chatbot for their own universities. So first of all, I scrapped data from giki website and then made chatbot using langchain",
     "github": "https://github.com/Muhammad-Ahtasham/GIKI-chatbot-BF.git",
