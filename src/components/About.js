@@ -2,7 +2,6 @@ import React from 'react';
 import './About.css';
 
 const About = () => {
-  // skills
   const skills = [
     { name: 'Python & TensorFlow', icon: '🐍' },
     { name: 'Machine Learning & Neural Networks', icon: '🧠' },
