@@ -27,6 +27,14 @@
     "demo": "https://www.linkedin.com/posts/muhammadahtasham_fyp-alzheimersdetection-teamwork-activity-7195501294457962496-Wwc6?utm_source=share&utm_medium=member_desktop&rcm=ACoAADbgXp4BG7KxPlptFGtM1RcbIFvbevtkFK4"
   },
   {
+    "title": "Dalle Image Generator",
+    "description": "This is a DALL·E-powered image generator web app. Enter a prompt to generate AI images, view your creations in the gallery, and download them for your use. Technologies Used are Python 3, Flask (web framework), OpenAI API (DALL·E 3), HTML, CSS, JavaScript (frontend). This app allows users to generate images using the DALL·E 3 model by OpenAI. Generated images are saved and can be viewed in the gallery. Users can download any image they create. The app is built with Flask for the backend and uses modern HTML/CSS/JS for the frontend.",
+    "image": "https://raw.githubusercontent.com/Muhammad-Ahtasham/Dalle-Image-Generator/refs/heads/main/Generated%20Images/5aa80183beab4679b7f3494f376d5eea.png",
+    "demo": "https://youtu.be/-TbBT0_zs6Q?si=F_oCtxe13UV4btS_",
+    "video": "https://youtu.be/-TbBT0_zs6Q?si=F_oCtxe13UV4btS_",
+    "github": "https://github.com/Muhammad-Ahtasham/Dalle-Image-Generator"
+  },
+  {
     "title": "University Chatbot",
     "description": "I made this project during my internship. All the internees were asked to make a chatbot for their own universities. So first of all, I scrapped data from giki website and then made chatbot using langchain",
     "github": "https://github.com/Muhammad-Ahtasham/GIKI-chatbot-BF.git",
