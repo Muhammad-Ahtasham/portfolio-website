@@ -4,6 +4,7 @@
     "description": "Developed a full-stack AI-powered application that allows users to upload PDFs and interact with their content through natural language queries. Leveraging Large Language Models (LLMs) and Weaviate vector database, the system performs semantic search and context-based question answering over PDF documents. The key technologies used are MERN Stack (MongoDB, Express, React, Node.js) for the web interface and backend, Weaviate for vectorized document storage and semantic search, LangChain / OpenAI API (or relevant LLMs) for understanding and answering questions, PDF parsing and preprocessing for chunking and embedding generation. The Example use cases are Legal document Q&A, Research paper summarization, Internal knowledge base access. This project showcases my ability to integrate machine learning with scalable web technologies to build real-world AI solutions.",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS1zjvdWgyWKNb3UObU6o5awocQhr6frdOJQ&s",
     "github": "https://github.com/Muhammad-Ahtasham/PDF-CHATBOT.git",
+    "demo": "https://pdfchatbot-qa.netlify.app/",
     "video": "https://youtu.be/XAsE6YTZHbU?si=PtumngkGGnuM7v8I"
   },
   {
