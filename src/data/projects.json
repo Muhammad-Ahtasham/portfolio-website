@@ -3,8 +3,8 @@
     "title": "AI Resume Reviewer",
     "description": "AI Resume Reviewer is a full-stack web application that leverages advanced AI to analyze PDF resumes and provide actionable feedback. Users can upload their resumes, which are then processed using OpenAI’s GPT-4 to extract key sections like Skills, Experience, and Education. The app highlights potential gaps, suggests improvements, and compares extracted skills with industry recommendations. With a modern, responsive interface built on Next.js and Tailwind CSS, it delivers a seamless user experience. The backend, powered by Express.js and LangChain, orchestrates the AI workflow for accurate and insightful analysis. This tool empowers job seekers to optimize their resumes and boost their chances in the job market.",
     "image": "https://media.licdn.com/dms/image/v2/D5612AQHiyWWGuGLhFg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1733814700081?e=2147483647&v=beta&t=NQeMb2OoFxWjRCRgp8JYA8wc_06g_rYr7YDvV9zORIY",
-    "github": "https://github.com/ahtasham-ahsan/AI-Resume-Reviewer.git",
-    "demo": "https://ai-resume-reviewer-1.netlify.app/",
+    "github": "https://github.com/Muhammad-Ahtasham/AI-Resume-Reviewer.git",
+    "demo": "https://ai-resume-reviewer1.netlify.app/",
     "video": "https://youtu.be/DwMdzo3OT6M"
   },
   {
