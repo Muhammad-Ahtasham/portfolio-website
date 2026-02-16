@@ -1,7 +1,8 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "./Projects.css";
 import projectsData from "../data/projects.json";
+import SocialMedia from "./SocialMedia";
 
 function slugify(title) {
   return title
@@ -131,10 +132,13 @@ const Projects = () => {
               View GitHub Portfolio
             </a>
             {/* <button className="contact-me-btn">Contact Me</button> */}
-            <Link to="/contact" className="contact-me-btn">Contact Me</Link>
+            <Link to="/contact" className="contact-me-btn">
+              Contact Me
+            </Link>
           </div>
         </div>
       </div>
+      <SocialMedia />
     </div>
   );
 };

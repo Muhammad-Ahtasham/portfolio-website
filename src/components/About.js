@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.css';
+import SocialMedia from './SocialMedia';
 
 const About = () => {
   return (
@@ -105,6 +106,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <SocialMedia />
     </div>
   );
 };

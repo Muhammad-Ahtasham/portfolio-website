@@ -1,6 +1,7 @@
-import React from 'react';
-import careerHistoryData from '../data/careerHistory.json';
-import './CareerHistory.css';
+import React from "react";
+import careerHistoryData from "../data/careerHistory.json";
+import "./CareerHistory.css";
+import SocialMedia from "./SocialMedia";
 
 const CareerHistory = () => {
   return (
@@ -23,16 +24,18 @@ const CareerHistory = () => {
                     <span className="period">📅 {job.period}</span>
                   </div>
                 </div>
-                
+
                 <div className="job-description">
                   <p>{job.description}</p>
                 </div>
-                
+
                 <div className="technologies">
                   <h4>Technologies & Skills:</h4>
                   <div className="tech-tags">
                     {job.technologies.map((tech, techIndex) => (
-                      <span key={techIndex} className="tech-tag">{tech}</span>
+                      <span key={techIndex} className="tech-tag">
+                        {tech}
+                      </span>
                     ))}
                   </div>
                 </div>
@@ -41,6 +44,7 @@ const CareerHistory = () => {
           ))}
         </div>
       </div>
+      <SocialMedia />
     </div>
   );
 };
