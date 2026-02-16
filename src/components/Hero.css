@@ -57,25 +57,47 @@
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(45deg, #fff, #e0e7ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  color: white;
+  position: relative;
 }
 
 .dynamic-name {
   position: relative;
   display: inline-block;
+  background: linear-gradient(135deg, #fff 0%, #e0e7ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: none;
+  padding: 0 5px;
+  border-radius: 4px;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  background-size: 200% 200%;
+  animation: gradientShift 3s ease-in-out infinite;
 }
 
-.dynamic-name::after {
+/* .dynamic-name::after {
   content: '|';
   position: absolute;
-  right: -10px;
+  right: -12px;
   top: 0;
+  height: 100%;
+  width: 3px;
+  background: linear-gradient(180deg, #fff, #667eea, #fff);
   animation: blink 0.8s infinite;
-  color: #667eea;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(102, 126, 234, 0.8);
+} */
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
 }
 
 @keyframes blink {
