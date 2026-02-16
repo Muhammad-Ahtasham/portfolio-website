@@ -1,10 +1,13 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Projects.css";
 import projectsData from "../data/projects.json";
 
 function slugify(title) {
-  return title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+  return title
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
 }
 
 const Projects = () => {
@@ -12,6 +15,12 @@ const Projects = () => {
 
   const handleProjectClick = (project) => {
     navigate(`/project/${slugify(project.title)}`);
+  };
+
+  const truncateDescription = (description, maxLength = 100) => {
+    if (!description) return "";
+    if (description.length <= maxLength) return description;
+    return description.substring(0, maxLength) + "...";
   };
 
   return (
@@ -26,11 +35,11 @@ const Projects = () => {
 
         <div className="projects-grid">
           {projectsData.map((project, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="project-card"
               onClick={() => handleProjectClick(project)}
-              style={{ cursor: 'pointer' }}
+              style={{ cursor: "pointer" }}
             >
               <div className="project-image">
                 <img src={project.image} alt={project.title} />
@@ -38,15 +47,16 @@ const Projects = () => {
                   <div className="overlay-content">
                     <h3>{project.title}</h3>
                     <p>{project.description}</p>
-                    {project.technologies && project.technologies.length > 0 && (
-                      <div className="project-tech">
-                        {project.technologies.map((tech, techIndex) => (
-                          <span key={techIndex} className="tech-tag">
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
-                    )}
+                    {project.technologies &&
+                      project.technologies.length > 0 && (
+                        <div className="project-tech">
+                          {project.technologies.map((tech, techIndex) => (
+                            <span key={techIndex} className="tech-tag">
+                              {tech}
+                            </span>
+                          ))}
+                        </div>
+                      )}
                     <div className="project-actions">
                       <a
                         href={project.link || project.demo}
@@ -74,10 +84,22 @@ const Projects = () => {
               </div>
               <div className="project-info">
                 <h3 className="project-title">{project.title}</h3>
-                <p className="project-desc">{project.description}</p>
+                <p className="project-desc">
+                  {truncateDescription(project.description)}
+                </p>
                 <div className="project-meta">
-                  <span className="project-type">{project.type || 'Project'}</span>
-                  <span className="project-date">{project.date || '2024'}</span>
+                  <span className="project-type">
+                    {project.type || "Project"}
+                  </span>
+                  <span className="project-date">{project.date || "2024"}</span>
+                </div>
+                <div className="project-read-more">
+                  <button
+                    className="read-more-btn"
+                    onClick={() => handleProjectClick(project)}
+                  >
+                    Read More
+                  </button>
                 </div>
                 {project.technologies && project.technologies.length > 0 && (
                   <div className="project-tech-list">
@@ -108,7 +130,8 @@ const Projects = () => {
             >
               View GitHub Portfolio
             </a>
-            <button className="contact-me-btn">Contact Me</button>
+            {/* <button className="contact-me-btn">Contact Me</button> */}
+            <Link to="/contact" className="contact-me-btn">Contact Me</Link>
           </div>
         </div>
       </div>
