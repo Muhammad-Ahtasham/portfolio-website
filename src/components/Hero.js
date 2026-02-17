@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Hero.css';
 import profileImg from '../images/img.png';
+import SocialMedia from './SocialMedia';
 
 const dynamicText = 'My name is Muhammad Ahtasham';
 const typingSpeed = 80; // ms per char
@@ -44,6 +45,7 @@ const Hero = () => {
           <img src={profileImg} alt="AI Engineer" />
         </div>
       </div>
+      <SocialMedia />
     </div>
   );
 };

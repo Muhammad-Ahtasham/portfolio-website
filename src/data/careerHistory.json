@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Software Engineer - Onsite",
+    "company": "Ocloud Solutions",
+    "location": "Lahore",
+    "period": "December 2024 – Present",
+    "description": "Developing full-stack applications using MERN Stack with PostgreSQL for scalable and optimized data storage. Building high-performance Next.js applications with SSR to reduce load times and improve user experience. Integrating LangChain, LangGraph, and LangSmith to develop LLM-powered intelligent systems and automation pipelines. Designing and maintaining microservices and REST APIs to support complex backend workflows. Creating RAG-based chatbots for company websites using vector databases, embeddings, and retrieval pipelines to enable accurate, context-aware responses. Collaborating with teams to deliver AI-driven and modern web-based business solutions.",
+    "technologies": ["MERN Stack", "PostgreSQL", "Next.js", "LangChain", "LangGraph", "LangSmith", "REST APIs", "Microservices", "RAG", "Vector Databases"]
+  },
+  {
+    "title": "Python Developer - Onsite",
+    "company": "Medtronix Systems",
+    "location": "Sahiwal",
+    "period": "June 2024 – November 2024",
+    "description": "Built and maintained scalable REST APIs, ensuring efficient data flow and smooth system integration. Designed modular backend components and optimized database queries to improve performance and reliability. Applied clean architecture principles and asynchronous processing to enhance system scalability and responsiveness. Collaborated closely with AI and frontend teams to ensure seamless integration between backend services and application features. Contributed to delivering stable, secure, and maintainable backend systems for internal tools and client-driven projects.",
+    "technologies": ["Python", "REST APIs", "Clean Architecture", "Asynchronous Processing", "Database Optimization", "Backend Development"]
+  },
+  {
+    "title": "Artificial Intelligence Intern - Remote",
+    "company": "ITSOLERA Pvt Ltd",
+    "location": "Islamabad",
+    "period": "March 2024 – May 2024",
+    "description": "Built an AI-powered Game Story Generator using generative AI models for dynamic narrative creation. Developed a Fake Text Detection model using NLP techniques and ML pipelines. Delivered AI models within deadlines by collaborating with cross-functional teams and improving system accuracy.",
+    "technologies": ["Generative AI", "NLP", "Machine Learning", "AI Models", "ML Pipelines"]
+  },
+  {
+    "title": "Artificial Intelligence Intern - Onsite",
+    "company": "Musketeers Tech",
+    "location": "Lahore",
+    "period": "June 2023 – August 2023",
+    "description": "Worked on ML, Computer Vision, NLP, and Generative AI projects for real-world applications. Developed and fine-tuned models using Hugging Face, including custom dataset training. Applied NLP for sentiment analysis, text classification, and NER tasks. Built Computer Vision models for image classification, object detection, and segmentation. Gained hands-on experience with cutting-edge LLMs and deep learning frameworks.",
+    "technologies": ["Machine Learning", "Computer Vision", "NLP", "Generative AI", "Hugging Face", "Deep Learning", "LLMs", "Sentiment Analysis", "Object Detection"]
+  }
+]
