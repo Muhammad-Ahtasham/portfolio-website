@@ -1,0 +1,126 @@
+/* ========================================
+   COLOR VARIABLES - Theme Configuration
+   ========================================
+   Change these values to update the entire app's theme!
+   */
+
+:root {
+  /* Primary Colors */
+  --color-primary: #667eea;
+  --color-primary-dark: #5a6fd6;
+  --color-primary-light: #764ba2;
+  
+  /* Secondary Colors */
+  --color-secondary: #764ba2;
+  --color-secondary-dark: #5e3d82;
+  --color-secondary-light: #8b6cb8;
+  
+  /* Tertiary Colors */
+  --color-tertiary: #5a6fd6;
+  --color-tertiary-dark: #4858b3;
+  --color-tertiary-light: #7b89e0;
+
+  /* Background Colors */
+  --color-background: #000000;
+  --color-background-secondary: #111111;
+  --color-card-bg: rgba(255, 255, 255, 0.95);
+  --color-card-bg-hover: rgba(255, 255, 255, 1);
+  
+  /* Text Colors */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #4a5568;
+  --color-text-tertiary: #718096;
+  --color-text-muted: #a0aec0;
+  --color-text-gradient: #e0e7ff;
+  
+  /* Accent Colors */
+  --color-accent: #1e90ff;
+  --color-accent-hover: #63b3ed;
+  
+  /* Gradient Definitions */
+  --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  --gradient-text: linear-gradient(45deg, #ffffff, var(--color-text-gradient));
+  --gradient-button: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  
+  /* Border Colors */
+  --color-border: rgba(255, 255, 255, 0.2);
+  --color-border-hover: rgba(255, 255, 255, 0.3);
+  --color-border-accent: rgba(102, 126, 234, 0.3);
+  
+  /* Shadow Colors */
+  --color-shadow: rgba(0, 0, 0, 0.2);
+  --color-shadow-hover: rgba(0, 0, 0, 0.3);
+  --color-shadow-accent: rgba(102, 126, 234, 0.3);
+  --color-shadow-accent-hover: rgba(102, 126, 234, 0.5);
+  
+  /* Special Effects */
+  --color-overlay: rgba(102, 126, 234, 0.9);
+  --color-overlay-secondary: rgba(118, 75, 162, 0.9);
+  --color-glow: rgba(102, 126, 234, 0.4);
+  
+  /* Button Colors */
+  --color-button-bg: rgba(255, 255, 255, 0.2);
+  --color-button-hover: rgba(255, 255, 255, 0.9);
+  --color-button-text: #ffffff;
+  
+  /* Status Colors */
+  --color-success: #30c070;
+  --color-success-bg: rgba(48, 192, 112, 0.1);
+  --color-error: #e74c3c;
+  --color-error-bg: rgba(231, 76, 60, 0.1);
+  
+  /* Stats & Highlights */
+  --color-stat: var(--color-primary);
+  
+  /* Skill & Tech Tags */
+  --color-tag-bg: rgba(102, 126, 234, 0.1);
+  --color-tag-border: rgba(102, 126, 234, 0.3);
+  --color-tag-text: var(--color-primary);
+  
+  /* Timeline */
+  --color-timeline-dot: var(--color-primary);
+  --color-timeline-line: rgba(255, 255, 255, 0.3);
+}
+
+/* ========================================
+   ALTERNATIVE THEMES (Uncomment to use)
+   ======================================== */
+
+/* 
+   Dark Theme:
+   :root {
+     --color-primary: #3b82f6;
+     --color-primary-dark: #2563eb;
+     --color-primary-light: #60a5fa;
+     --color-secondary: #8b5cf6;
+     --color-secondary-dark: #7c3aed;
+     --color-secondary-light: #a78bfa;
+     --color-tertiary: #06b6d4;
+   }
+*/
+
+/* 
+   Green Theme:
+   :root {
+     --color-primary: #10b981;
+     --color-primary-dark: #059669;
+     --color-primary-light: #34d399;
+     --color-secondary: #3b82f6;
+     --color-secondary-dark: #2563eb;
+     --color-secondary-light: #60a5fa;
+    ary: #f --color-terti59e0b;
+   }
+*/
+
+/* 
+   Orange/Red Theme:
+   :root {
+     --color-primary: #f97316;
+     --color-primary-dark: #ea580c;
+     --color-primary-light: #fb923c;
+     --color-secondary: #ef4444;
+     --color-secondary-dark: #dc2626;
+     --color-secondary-light: #f87171;
+     --color-tertiary: #eab308;
+   }
+*/

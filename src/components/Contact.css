@@ -1,6 +1,9 @@
+/* Import color variables */
+@import '../styles/variables.css';
+
 .contact {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--gradient-primary);
   padding: 80px 0;
   position: relative;
   overflow-x: hidden;
@@ -33,12 +36,12 @@
 .section-title {
   font-size: 3.5rem;
   font-weight: 800;
-  color: white;
+  color: var(--color-text-primary);
   margin: 0 0 20px 0;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(45deg, #fff, #e0e7ff);
+  background: var(--gradient-text);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -67,20 +70,20 @@
 }
 
 .info-card {
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--color-card-bg);
   padding: 30px;
   border-radius: 20px;
   text-align: center;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 20px 40px var(--color-shadow);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--color-border);
   transition: all 0.3s ease;
 }
 
 .info-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
-  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 25px 50px var(--color-shadow-hover);
+  background: var(--color-card-bg-hover);
 }
 
 .info-icon {
@@ -91,45 +94,45 @@
 
 .info-card h3 {
   font-size: 1.3rem;
-  color: #2d3748;
+  color: var(--color-text-secondary);
   margin: 0 0 10px 0;
   font-weight: 700;
 }
 
 .info-card p {
   font-size: 1.1rem;
-  color: #4a5568;
+  color: var(--color-text-secondary);
   margin: 0 0 10px 0;
   font-weight: 500;
 }
 
 .info-subtitle {
   font-size: 0.9rem;
-  color: #718096;
+  color: var(--color-text-tertiary);
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 .contact-form-container {
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--color-card-bg);
   padding: 40px;
   border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 20px 40px var(--color-shadow);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--color-border);
 }
 
 .contact-form-container h3 {
   font-size: 2rem;
-  color: #2d3748;
+  color: var(--color-text-secondary);
   margin: 0 0 10px 0;
   font-weight: 700;
 }
 
 .form-subtitle {
   font-size: 1.1rem;
-  color: #718096;
+  color: var(--color-text-tertiary);
   margin: 0 0 30px 0;
   font-weight: 400;
 }
@@ -149,30 +152,30 @@
 .form-group textarea {
   width: 100%;
   padding: 15px;
-  border: 1px solid rgba(102, 126, 234, 0.3);
+  border: 1px solid var(--color-border-accent);
   border-radius: 10px;
   font-size: 1rem;
   transition: all 0.3s ease;
   background: rgba(255, 255, 255, 0.5);
-  color: #4a5568;
+  color: var(--color-text-secondary);
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: #a0aec0;
+  color: var(--color-text-muted);
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: var(--color-primary);
   box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
   background: white;
 }
 
 .submit-btn {
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  color: white;
+  background: var(--gradient-button);
+  color: var(--color-text-primary);
   border: none;
   padding: 15px 30px;
   border-radius: 10px;
@@ -182,15 +185,14 @@
   letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 15px var(--color-shadow-accent);
+  border: 1px solid var(--color-border);
   align-self: flex-start;
 }
 
 .submit-btn:hover:not(:disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
-  background: linear-gradient(135deg, #764ba2, #667eea);
+  box-shadow: 0 6px 20px var(--color-shadow-accent-hover);
 }
 
 .submit-btn:disabled {
@@ -208,37 +210,37 @@
 }
 
 .success-message {
-  background: rgba(48, 192, 112, 0.1);
-  color: #2f855a;
+  background: var(--color-success-bg);
+  color: var(--color-success);
   border: 1px solid rgba(48, 192, 112, 0.3);
 }
 
 .error-message {
-  background: rgba(231, 76, 60, 0.1);
-  color: #c53030;
+  background: var(--color-error-bg);
+  color: var(--color-error);
   border: 1px solid rgba(231, 76, 60, 0.3);
 }
 
 .contact-cta {
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--color-card-bg);
   padding: 50px;
   border-radius: 20px;
   text-align: center;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 20px 40px var(--color-shadow);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--color-border);
 }
 
 .contact-cta h3 {
   font-size: 2rem;
-  color: #2d3748;
+  color: var(--color-text-secondary);
   margin: 0 0 15px 0;
   font-weight: 700;
 }
 
 .contact-cta p {
   font-size: 1.1rem;
-  color: #4a5568;
+  color: var(--color-text-secondary);
   margin: 0 0 30px 0;
   line-height: 1.6;
 }
@@ -251,8 +253,8 @@
 }
 
 .email-btn {
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  color: white;
+  background: var(--gradient-button);
+  color: var(--color-text-primary);
   border: none;
   padding: 15px 40px;
   border-radius: 30px;
@@ -262,20 +264,19 @@
   letter-spacing: 2px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 30px var(--color-shadow-accent);
+  border: 1px solid var(--color-border);
   text-decoration: none;
 }
 
 .email-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
-  background: linear-gradient(135deg, #764ba2, #667eea);
+  box-shadow: 0 15px 40px var(--color-shadow-accent-hover);
 }
 
 .github-contact-btn {
-  background: rgba(255, 255, 255, 0.2);
-  color: rgb(54, 127, 255);
+  background: var(--color-button-bg);
+  color: var(--color-accent);
   border: none;
   padding: 15px 40px;
   border-radius: 30px;
@@ -285,16 +286,16 @@
   letter-spacing: 2px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 30px var(--color-shadow);
+  border: 1px solid var(--color-border);
   text-decoration: none;
 }
 
 .github-contact-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-  background: rgba(255, 255, 255, 0.9);
-  color: #667eea;
+  box-shadow: 0 15px 40px var(--color-shadow-hover);
+  background: var(--color-button-hover);
+  color: var(--color-primary);
 }
 
 /* Responsive Design */

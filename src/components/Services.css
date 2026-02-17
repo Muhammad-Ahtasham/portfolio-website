@@ -1,6 +1,9 @@
+/* Import color variables */
+@import '../styles/variables.css';
+
 .services {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--gradient-primary);
   padding: 80px 0;
   position: relative;
   overflow-x: hidden;
@@ -33,12 +36,12 @@
 .section-title {
   font-size: 3.5rem;
   font-weight: 800;
-  color: white;
+  color: var(--color-text-primary);
   margin: 0 0 20px 0;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(45deg, #fff, #e0e7ff);
+  background: var(--gradient-text);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -61,20 +64,20 @@
 }
 
 .service-card {
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--color-card-bg);
   padding: 40px;
   border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 20px 40px var(--color-shadow);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--color-border);
   transition: all 0.3s ease;
   text-align: center;
 }
 
 .service-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
-  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 25px 50px var(--color-shadow-hover);
+  background: var(--color-card-bg-hover);
 }
 
 .service-icon {
@@ -85,14 +88,14 @@
 
 .service-title {
   font-size: 1.5rem;
-  color: #2d3748;
+  color: var(--color-text-secondary);
   margin: 0 0 15px 0;
   font-weight: 700;
 }
 
 .service-description {
   font-size: 1rem;
-  color: #4a5568;
+  color: var(--color-text-secondary);
   line-height: 1.6;
   margin-bottom: 25px;
 }
@@ -106,9 +109,9 @@
 
 .feature-item {
   padding: 8px 0;
-  color: #4a5568;
+  color: var(--color-text-secondary);
   font-weight: 500;
-  border-bottom: 1px solid rgba(102, 126, 234, 0.2);
+  border-bottom: 1px solid var(--color-border-accent);
   transition: color 0.3s ease;
 }
 
@@ -117,12 +120,12 @@
 }
 
 .feature-item:hover {
-  color: #667eea;
+  color: var(--color-primary);
   padding-left: 5px;
 }
 
 .feature-dot {
-  color: #667eea;
+  color: var(--color-primary);
   font-size: 1.2rem;
   margin-right: 10px;
 }
@@ -132,8 +135,8 @@
 }
 
 .learn-more-btn {
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  color: white;
+  background: var(--gradient-button);
+  color: var(--color-text-primary);
   border: none;
   padding: 12px 24px;
   border-radius: 25px;
@@ -142,43 +145,42 @@
   letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 15px var(--color-shadow-accent);
+  border: 1px solid var(--color-border);
 }
 
 .learn-more-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
-  background: linear-gradient(135deg, #764ba2, #667eea);
+  box-shadow: 0 6px 20px var(--color-shadow-accent-hover);
 }
 
 .services-cta {
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--color-card-bg);
   padding: 50px;
   border-radius: 20px;
   text-align: center;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 20px 40px var(--color-shadow);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--color-border);
 }
 
 .services-cta h3 {
   font-size: 2rem;
-  color: #2d3748;
+  color: var(--color-text-secondary);
   margin: 0 0 15px 0;
   font-weight: 700;
 }
 
 .services-cta p {
   font-size: 1.1rem;
-  color: #4a5568;
+  color: var(--color-text-secondary);
   margin: 0 0 30px 0;
   line-height: 1.6;
 }
 
 .contact-btn {
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  color: white;
+  background: var(--gradient-button);
+  color: var(--color-text-primary);
   border: none;
   padding: 15px 40px;
   border-radius: 30px;
@@ -188,15 +190,14 @@
   letter-spacing: 2px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 30px var(--color-shadow-accent);
+  border: 1px solid var(--color-border);
   text-decoration: none;
 }
 
 .contact-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
-  background: linear-gradient(135deg, #764ba2, #667eea);
+  box-shadow: 0 15px 40px var(--color-shadow-accent-hover);
 }
 
 /* Responsive Design */
