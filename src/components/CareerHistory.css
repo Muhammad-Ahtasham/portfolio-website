@@ -1,6 +1,9 @@
+/* Import color variables */
+@import '../styles/variables.css';
+
 .career-history {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--gradient-primary);
   padding: 80px 0;
   position: relative;
   overflow-x: hidden;
@@ -33,12 +36,12 @@
 .section-title {
   font-size: 3.5rem;
   font-weight: 800;
-  color: white;
+  color: var(--color-text-primary);
   margin: 0 0 20px 0;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(45deg, #fff, #e0e7ff);
+  background: var(--gradient-text);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -76,10 +79,10 @@
   transform: translateX(-50%);
   width: 12px;
   height: 12px;
-  background: linear-gradient(135deg, #fff, #e0e7ff);
+  background: var(--gradient-text);
   border-radius: 50%;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
-  border: 3px solid #667eea;
+  border: 3px solid var(--color-primary);
   z-index: 10;
 }
 
@@ -91,7 +94,7 @@
   transform: translateX(-50%);
   width: 2px;
   height: 10px;
-  background: rgba(255, 255, 255, 0.3);
+  background: var(--color-timeline-line);
   z-index: 5;
 }
 
@@ -105,12 +108,12 @@
 }
 
 .timeline-content {
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--color-card-bg);
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px var(--color-shadow);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--color-border);
   transition: all 0.3s ease;
   transform: translateY(0);
   height: 100%;
@@ -121,8 +124,8 @@
 
 .timeline-item:hover .timeline-content {
   transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 15px 40px var(--color-shadow-hover);
+  background: var(--color-card-bg-hover);
 }
 
 .job-header {
@@ -132,7 +135,7 @@
 .job-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #2d3748;
+  color: var(--color-text-secondary);
   margin: 0 0 10px 0;
   line-height: 1.3;
 }
@@ -146,20 +149,20 @@
 
 .company {
   font-weight: 700;
-  color: #667eea;
+  color: var(--color-primary);
   font-size: 1.1rem;
 }
 
 .location, .period {
   font-size: 0.9rem;
-  color: #718096;
+  color: var(--color-text-tertiary);
   font-weight: 500;
 }
 
 .job-description {
   margin-bottom: 25px;
   line-height: 1.7;
-  color: #4a5568;
+  color: var(--color-text-secondary);
 }
 
 .job-description p {
@@ -173,7 +176,7 @@
 
 .technologies h4 {
   font-size: 1rem;
-  color: #667eea;
+  color: var(--color-primary);
   margin: 0 0 15px 0;
   font-weight: 600;
   text-transform: uppercase;
@@ -189,22 +192,21 @@
 .tech-tag {
   display: inline-block;
   padding: 6px 12px;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  color: white;
+  background: var(--gradient-button);
+  color: var(--color-text-primary);
   font-size: 0.8rem;
   font-weight: 600;
   border-radius: 20px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 4px 15px var(--color-shadow-accent);
   transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--color-border);
 }
 
 .tech-tag:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
-  background: linear-gradient(135deg, #764ba2, #667eea);
+  box-shadow: 0 6px 20px var(--color-shadow-accent-hover);
 }
 
 /* Responsive Design */
