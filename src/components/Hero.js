@@ -31,6 +31,7 @@ const Hero = () => {
   }, [displayed, isDeleting]);
 
   return (
+    <>
     <div className="hero" id="home">
       <div className="hero-content">
         <div className="hero-text">
@@ -45,8 +46,9 @@ const Hero = () => {
           <img src={profileImg} alt="AI Engineer" />
         </div>
       </div>
-      <SocialMedia />
     </div>
+    <SocialMedia />
+    </>
   );
 };
 

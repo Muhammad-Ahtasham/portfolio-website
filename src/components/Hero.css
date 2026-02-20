@@ -9,6 +9,7 @@
   background: var(--gradient-primary);
   position: relative;
   overflow: hidden;
+  margin-bottom: -60px;
 }
 
 .hero::before {

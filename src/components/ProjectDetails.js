@@ -53,6 +53,7 @@ const ProjectDetails = () => {
   };
 
   return (
+    <>
     <div className="project-details-page">
       <div className="container">
         <div className="section-header">
@@ -156,8 +157,10 @@ const ProjectDetails = () => {
           </button>
         </div>
       </div>
-      <SocialMedia />
+      
     </div>
+    <SocialMedia />
+    </>
   );
 };
 
