@@ -26,15 +26,23 @@ const Contact = () => {
     setSubmitStatus("");
 
     try {
-      // Simulate form submission
-      await new Promise((resolve) => setTimeout(resolve, 2000));
+      const response = await fetch('https://email-send-wh0u.onrender.com/api/send-email', {
+      // const response = await fetch('http://localhost:3000/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-      // In a real application, you would send this to your backend
-      console.log("Form submitted:", formData);
-
-      setSubmitStatus("success");
-      setFormData({ name: "", email: "", subject: "", message: "" });
+      if (response.ok) {
+        setSubmitStatus("success");
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        throw new Error('Failed to send email');
+      }
     } catch (error) {
+      console.error('Error sending email:', error);
       setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
