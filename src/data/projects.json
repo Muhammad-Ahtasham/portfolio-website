@@ -11,7 +11,7 @@
     "image": "https://media.licdn.com/dms/image/v2/D5612AQHiyWWGuGLhFg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1733814700081?e=2147483647&v=beta&t=NQeMb2OoFxWjRCRgp8JYA8wc_06g_rYr7YDvV9zORIY",
     "github": "https://github.com/Muhammad-Ahtasham/AI-Resume-Reviewer.git",
     "demo": "https://ai-resume-reviewer1.netlify.app/",
-    "video": "https://youtu.be/DwMdzo3OT6M"
+    "video": "https://my-portfolio-site-videos.s3.amazonaws.com/ai%20resume%20reviewer.mov"
   },
   {
     "title": "PDFQuery AI",
@@ -19,7 +19,14 @@
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS1zjvdWgyWKNb3UObU6o5awocQhr6frdOJQ&s",
     "github": "https://github.com/Muhammad-Ahtasham/PDF-CHATBOT.git",
     "demo": "https://pdfchatbot-qa.netlify.app/",
-    "video": "https://youtu.be/jQVqS91-w4s"
+    "video": "https://my-portfolio-site-videos.s3.amazonaws.com/pdf-qa-chatbot.mp4"
+  },
+  {
+    "title": "AI Customer Service & Lead Generation Chatbot",
+    "description": "Built a multilingual AI customer service chatbot for Malind Tech that combines advanced natural language processing with image recognition capabilities. The system uses Retrieval-Augmented Generation (RAG) to provide accurate, context-aware responses about the company's services. Features include dual-model image analysis (OCR + visual captioning), lead capture forms, and seamless integration with the company's knowledge base. The chatbot automatically detects Arabic vs English queries and responds accordingly, enhancing customer engagement and lead generation.",
+    "image": "/images/ai_chatbot.png",
+    "github": "https://github.com/Muhammad-Ahtasham/ChatBot.git",
+    "video": "https://my-portfolio-site-videos.s3.amazonaws.com/Malind%20Chatbot.mp4"
   },
   {
     "title": "AI Image Generation",
