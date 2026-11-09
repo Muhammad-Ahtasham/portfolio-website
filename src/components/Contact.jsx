@@ -9,7 +9,8 @@ const Contact = () => {
     subject: '',
     message: '',
   });
-  const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState('');
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -40,15 +41,30 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus('');
 
-    // Create mailto link
-    const mailtoLink = `mailto:muhammadahtasham@mergestack.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`;
-    window.location.href = mailtoLink;
+    try {
+      const response = await fetch('https://email-send-wh0u.onrender.com/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-    setSubmitted(true);
-    setFormData({ name: '', email: '', subject: '', message: '' });
-
-    setTimeout(() => setSubmitted(false), 3000);
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        throw new Error('Failed to send email');
+      }
+    } catch (error) {
+      console.error('Error sending email:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactLinks = [
@@ -212,23 +228,35 @@ const Contact = () => {
                 {/* Submit Button */}
                 <motion.button
                   variants={itemVariants}
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
+                  whileHover={{ scale: isSubmitting ? 1 : 1.02 }}
+                  whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
                   type="submit"
-                  className="w-full flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold hover:shadow-glow transition-all"
+                  disabled={isSubmitting}
+                  className="w-full flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold hover:shadow-glow transition-all disabled:opacity-60 disabled:cursor-not-allowed"
                 >
                   <Send size={20} />
-                  Send Message
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
                 </motion.button>
 
                 {/* Success Message */}
-                {submitted && (
+                {submitStatus === 'success' && (
                   <motion.div
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     className="mt-4 p-3 rounded-lg bg-green-500/20 border border-green-500/50 text-green-300 text-sm"
                   >
-                    ✓ Email client opened! Please complete sending the email.
+                    ✓ Thank you! Your message has been sent successfully. I'll get back to you soon.
+                  </motion.div>
+                )}
+
+                {/* Error Message */}
+                {submitStatus === 'error' && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="mt-4 p-3 rounded-lg bg-red-500/20 border border-red-500/50 text-red-300 text-sm"
+                  >
+                    Sorry, there was an error sending your message. Please try again or email me directly.
                   </motion.div>
                 )}
               </motion.form>
