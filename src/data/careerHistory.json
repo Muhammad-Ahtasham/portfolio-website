@@ -1,10 +1,18 @@
 [
   {
     "title": "Software Engineer - Onsite",
+    "company": "Mergestack",
+    "location": "Lahore",
+    "period": "June 2026 – Present",
+    "description": "Building Pedant, a production-grade Transportation Management System (TMS) serving carriers, dispatchers, and logistics operators. Architected and delivered full-stack features across the React/TypeScript frontend and NestJS/MongoDB backend, spanning load management, job tracking, commission & payouts, org structure, and carrier analytics. Designed and implemented a real-time multi-channel notification system — In-App, Browser Push (VAPID), Email (SendGrid), and SMS (Twilio) — backed by a Redis Pub/Sub SSE stream with multi-instance scaling and idempotent delivery guarantees. Built and maintained RESTful APIs following strict DTO validation, role-based authorization, and multi-tenant data isolation patterns. Wrote end-to-end tests with Playwright covering critical user flows, authentication, and authorization paths. Contributed to performance, security, and maintainability across a NestJS 11 monorepo (HTTP API + BullMQ worker, 8 shared libraries).",
+    "technologies": ["React", "TypeScript", "NestJS", "MongoDB", "Redis", "SendGrid", "Twilio", "Playwright", "BullMQ", "REST APIs", "Multi-Tenant Architecture"]
+  },
+  {
+    "title": "Software Engineer - Onsite",
     "company": "Ocloud Solutions",
     "location": "Lahore",
-    "period": "December 2024 – Present",
-    "description": "Developing full-stack applications using MERN Stack with PostgreSQL for scalable and optimized data storage. Building high-performance Next.js applications with SSR to reduce load times and improve user experience. Integrating LangChain, LangGraph, and LangSmith to develop LLM-powered intelligent systems and automation pipelines. Designing and maintaining microservices and REST APIs to support complex backend workflows. Creating RAG-based chatbots for company websites using vector databases, embeddings, and retrieval pipelines to enable accurate, context-aware responses. Collaborating with teams to deliver AI-driven and modern web-based business solutions.",
+    "period": "December 2024 – April 2026",
+    "description": "As a Full Stack & AI Engineer at Ocloud Solutions, bridged the gap between complex machine learning models and scalable, production-ready software. Led the end-to-end full-stack development of Zyraa, a scalable SaaS platform, designing its microservices architecture, secure REST APIs, and a highly responsive user interface. Spearheaded the development of context-aware RAG systems and multi-agent task orchestration pipelines to automate complex workflows. Engineered high-performance server-side rendered (SSR) web applications and optimized database structures for both relational and non-relational environments.",
     "technologies": ["MERN Stack", "PostgreSQL", "Next.js", "LangChain", "LangGraph", "LangSmith", "REST APIs", "Microservices", "RAG", "Vector Databases"]
   },
   {
