@@ -10,12 +10,14 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import BackgroundElements from './components/BackgroundElements';
+import CustomCursor from './components/CustomCursor';
 import './index.css';
 
 function App() {
   return (
     <MotionConfig reducedMotion="user">
       <div className="min-h-screen bg-dark-navy overflow-hidden">
+        <CustomCursor />
         <BackgroundElements />
         <Navbar />
         <main className="relative z-10">
