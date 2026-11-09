@@ -20,7 +20,7 @@ function App() {
         <CustomCursor />
         <BackgroundElements />
         <Navbar />
-        <main className="relative z-10">
+        <main className="relative z-10 md:pl-24">
           <Hero />
           <About />
           <Services />

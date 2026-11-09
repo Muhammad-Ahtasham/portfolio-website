@@ -72,7 +72,7 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'muhammadahtasham@mergestack.com',
+      value: 'ahtashamahsan988@gmail.com',
       href: 'mailto:muhammadahtasham@mergestack.com',
       color: 'from-blue-500 to-cyan-500',
     },
@@ -114,7 +114,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="relative py-24 overflow-hidden">
+    <section id="contact" className="relative pt-12 pb-24 overflow-hidden">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           variants={containerVariants}

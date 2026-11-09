@@ -40,7 +40,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="relative mt-12 border-t border-blue-500/10 bg-dark-navy/50 backdrop-blur-sm">
+    <footer className="relative mt-12 md:pl-24 border-t border-blue-500/10 bg-dark-navy/50 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}

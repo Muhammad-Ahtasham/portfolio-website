@@ -25,7 +25,7 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="relative py-24 overflow-hidden">
+    <section id="projects" className="relative pt-12 pb-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           variants={containerVariants}

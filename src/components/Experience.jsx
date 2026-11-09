@@ -24,7 +24,7 @@ const Experience = () => {
   };
 
   return (
-    <section id="experience" className="relative py-24 overflow-hidden">
+    <section id="experience" className="relative pt-12 pb-24 overflow-hidden">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           variants={containerVariants}
