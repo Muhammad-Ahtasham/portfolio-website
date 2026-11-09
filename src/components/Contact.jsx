@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Linkedin, Github, Send } from 'lucide-react';
+import { Mail, Linkedin, Github, Send, Facebook, Instagram } from 'lucide-react';
+import WhatsAppIcon from './icons/WhatsAppIcon';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -88,6 +89,27 @@ const Contact = () => {
       value: 'Muhammad-Ahtasham',
       href: 'https://github.com/Muhammad-Ahtasham',
       color: 'from-violet-500 to-blue-500',
+    },
+    {
+      icon: WhatsAppIcon,
+      label: 'WhatsApp',
+      value: '+92 307 6917988',
+      href: 'https://wa.me/+923076917988',
+      color: 'from-green-500 to-cyan-500',
+    },
+    {
+      icon: Instagram,
+      label: 'Instagram',
+      value: '@atiii_sham',
+      href: 'https://www.instagram.com/atiii_sham',
+      color: 'from-pink-500 to-violet-500',
+    },
+    {
+      icon: Facebook,
+      label: 'Facebook',
+      value: 'AtiSham123',
+      href: 'https://www.facebook.com/AtiSham123/',
+      color: 'from-blue-600 to-cyan-500',
     },
   ];
 

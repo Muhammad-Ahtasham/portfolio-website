@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { Github, Linkedin, Mail, Heart, Instagram, Facebook } from 'lucide-react';
+import WhatsAppIcon from './icons/WhatsAppIcon';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -20,6 +21,21 @@ const Footer = () => {
       icon: Mail,
       href: 'mailto:muhammadahtasham@mergestack.com',
       label: 'Email',
+    },
+    {
+      icon: WhatsAppIcon,
+      href: 'https://wa.me/+923076917988',
+      label: 'WhatsApp',
+    },
+    {
+      icon: Instagram,
+      href: 'https://www.instagram.com/atiii_sham',
+      label: 'Instagram',
+    },
+    {
+      icon: Facebook,
+      href: 'https://www.facebook.com/AtiSham123/',
+      label: 'Facebook',
     },
   ];
 

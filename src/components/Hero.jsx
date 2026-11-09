@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Download, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowRight, Download, Facebook, Github, Instagram, Linkedin, Mail } from 'lucide-react';
+import WhatsAppIcon from './icons/WhatsAppIcon';
 
 const Hero = () => {
   const containerVariants = {
@@ -136,6 +137,33 @@ const Hero = () => {
                 className="p-3 rounded-lg glass border border-violet-500/30 hover:border-violet-400 text-violet-400 hover:text-violet-300 transition-all"
               >
                 <Mail size={20} />
+              </motion.a>
+              <motion.a
+                whileHover={{ scale: 1.2, y: -5 }}
+                href="https://wa.me/+923076917988"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 rounded-lg glass border border-green-500/30 hover:border-green-400 text-green-400 hover:text-green-300 transition-all"
+              >
+                <WhatsAppIcon size={20} />
+              </motion.a>
+              <motion.a
+                whileHover={{ scale: 1.2, y: -5 }}
+                href="https://www.instagram.com/atiii_sham"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 rounded-lg glass border border-pink-500/30 hover:border-pink-400 text-pink-400 hover:text-pink-300 transition-all"
+              >
+                <Instagram size={20} />
+              </motion.a>
+              <motion.a
+                whileHover={{ scale: 1.2, y: -5 }}
+                href="https://www.facebook.com/AtiSham123/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 rounded-lg glass border border-blue-600/30 hover:border-blue-500 text-blue-500 hover:text-blue-400 transition-all"
+              >
+                <Facebook size={20} />
               </motion.a>
             </motion.div>
           </motion.div>
