@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowRight, Download, Github, Linkedin, Mail } from 'lucide-react';
 
 const Hero = () => {
   const containerVariants = {
@@ -96,6 +96,17 @@ const Hero = () => {
               >
                 Let's Work Together
               </motion.button>
+
+              <motion.a
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                href="https://drive.google.com/file/d/1Xse8S6Rtas2Q9FH01ZZ66Tl9bxbsa8-T/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 px-8 py-4 rounded-lg glass border border-violet-500/50 text-white font-semibold hover:border-violet-400 transition-all"
+              >
+                <Download size={20} /> Download Resume
+              </motion.a>
             </motion.div>
 
             {/* Social Links */}
